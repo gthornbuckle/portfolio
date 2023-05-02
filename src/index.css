@@ -1,0 +1,58 @@
+@import "tailwindcss/base";
+@import "tailwindcss/components";
+@import "tailwindcss/utilities";
+
+@import url('https://fonts.googleapis.com/css?family=Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,500');
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Quicksand', 'Work Sans', 'Source Code Pro', 'Roboto', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #f1f5f9;
+}
+
+::selection {
+  background: #99f6e4;
+  color: #0e7490;
+}
+
+:focus-visible{
+  border: 3px solid #5eead4;
+  border-radius: 4px;
+  outline: none;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+@layer components {
+  .nav_active {
+    position: relative;
+    padding-right: 1rem;
+    color: #5eead4;
+    text-decoration-line: underline;
+    text-underline-offset: 3px;
+    font-weight: 500;
+  }
+  .nav_inactive{
+    position: relative;
+    padding-right: 1rem;
+    color: #cbd5e1;
+    text-decoration-line: none;
+  }
+  .info_card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #64748b;
+    border: none;
+    filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
+  }
+}
