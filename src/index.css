@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
-@import url('https://fonts.googleapis.com/css?family=Quicksand');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,500');
 
 body {
@@ -46,7 +46,15 @@ code {
     color: #cbd5e1;
     text-decoration-line: none;
   }
+  .footer{
+    display: flex;
+    flex-direction: row;
+    align-items: end;
+    height: 6rem;
+    background-color: #020617;
+  }
   .info_card{
+    width: 24rem;
     display: flex;
     flex-direction: column;
     align-items: center;

@@ -28,19 +28,29 @@ function Portfolio() {
               Combining my current coding knowledge along with my eye for design, I am motivated to step into my first developer role.
             </p>
           </motion.div>
+          <a className="py-4 text-teal-300 text-4xl font-bold drop-shadow-md font-['Work_Sans']">view<span className="text-slate-300">My</span><span className='text-yellow-400'>CV</span></a>
         </div>
       </div>
     </section>
     <section className='flex flex-row items-center justify-center selection:bg-slate-500 selection:text-slate-200'>
       <div className='mx-10 container flex flex-col'>
         <h1 className="py-4 text-slate-700 text-6xl font-bold font-['Work_Sans']"><span className="text-teal-600">my</span>Work_</h1>
-        <h2 className="text-slate-700 text-2xl">Personal Projects</h2>
-          <div className='grid sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
+        <h2 className="text-slate-700 text-2xl font-medium">Personal Projects</h2>
+          <div className='py-4 flex flex-row flex-wrap items-center justify-around'>
             <InfoCard/>
             <InfoCard/>
             <InfoCard/>
           </div>
+        <h2 className="text-slate-700 text-2xl font-medium">Bootcamp Projects</h2>
+        <div className='py-4 flex flex-row flex-wrap items-center justify-around'>
+          <InfoCard/>
+          <InfoCard/>
+          <InfoCard/>
+          <InfoCard/>
+          <InfoCard/>
+        </div>
       </div>
+      
     </section>
     </>
   );

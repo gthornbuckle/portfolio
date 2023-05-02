@@ -4,6 +4,7 @@ import Navbar from './Components/Navbar';
 import Portfolio from './Components/Pages/Portfolio';
 import About from './Components/Pages/About';
 import Contact from './Components/Pages/Contact';
+import Footer from './Components/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
           <Route path="contact" element={<Contact />} />
           <Route path="*" element={<Navigate to="/portfolio" replace />} />
         </Routes>
+        <Footer/>
       </>
     </BrowserRouter>
   );

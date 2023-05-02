@@ -4,27 +4,6 @@ import { motion } from 'framer-motion';
 
 const navItems = ['portfolio', 'about', 'contact'];
 
-const navBrandContainer = {
-  initial: {
-    opacity: 0
-  },
-  animate: {
-    opacity: 1,
-    transition: {
-      staggerChildren: 0.5
-    }
-  }
-}
-
-const brandItem = {
-  initial: {
-    opacity: 0
-  },
-  animate: {
-    opacity: 1,
-  }
-}
-
 function Navbar() {
 
   return (
@@ -32,19 +11,14 @@ function Navbar() {
       <motion.a
         href="portfolio"
         className="font-['Source_Code_Pro'] text-2xl pl-4"
-        variants={navBrandContainer}
-        inital='initial'
-        animate='animate'
       >
         <motion.span 
           className='text-teal-300 font-normal'
-          variants={brandItem}
         >
           george
         </motion.span>
         <motion.span 
           className='text-slate-300 font-medium'
-          variants={brandItem}
         >
           Hornbuckle
         </motion.span>
