@@ -54,10 +54,9 @@ code {
     background-color: #020617;
   }
   .info_card{
-    width: 24rem;
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    flex-direction: row;
+    align-items: start;
     justify-content: center;
     background-color: #64748b;
     border: none;
