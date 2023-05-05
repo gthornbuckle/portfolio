@@ -1,20 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import InfoCard from '../Info Cards/InfoCard';
-import { db } from '../../firebase.config'
-import { getDocs, collection } from 'firebase/firestore';
-
-const ref = collection(db, "mywork");
-
-const getWork = async () =>{
-  try{
-    const workData = await getDocs(ref);
-    return workData.docs.map(e => ({...e.data()}));
-    
-  }catch (err){
-    console.log(err);
-  }
-}
+import { workDataPersonal } from '../work_data'
 
 const cvLinkContainer = {
   hover: {
@@ -35,7 +22,7 @@ const cvChild = {
 
 function Portfolio() {
   const [cvHover, setcvHover] = useState(false);
-
+  
   return (
     <>
     <section className='h-[50rem] pt-24 bg-slate-700 flex flex-row items-center justify-center'>
@@ -82,7 +69,14 @@ function Portfolio() {
         <h1 className="py-4 text-slate-700 text-6xl font-bold font-['Work_Sans']"><span className="text-teal-600">my</span>Work_</h1>
         <h2 className="text-slate-700 text-2xl font-medium">Personal Projects</h2>
           <div className='py-4'>
-            <InfoCard/>
+            {workDataPersonal.map((data, i) =><InfoCard
+              key={`${data.title}-${i}`}
+              title={data.title}
+              tech={data.technologies}
+              desc={data.description}
+              view={data.url}
+              git={data.github}
+            />)}
           </div>
         <h2 className="text-slate-700 text-2xl font-medium">Bootcamp Projects</h2>
         <div className='py-4 grid place-content-center sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4 xl:grid-cols-4 gap-4'>

@@ -49,14 +49,14 @@ code {
   .footer{
     display: flex;
     flex-direction: row;
-    align-items: end;
+    align-items: flex-end;
     height: 6rem;
     background-color: #020617;
   }
   .info_card{
     display: flex;
     flex-direction: row;
-    align-items: start;
+    align-items: flex-start;
     justify-content: center;
     background-color: #64748b;
     border: none;
