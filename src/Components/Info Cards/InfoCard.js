@@ -11,7 +11,7 @@ function InfoCard(props) {
           <div className="py-3 flex flex-row flex-wrap items-center justify-around text-teal-300 text-lg text-center">
               {props.tech.map(e =><div className='flex flex-row items-center'>
                 <p key={e.name} className="px-2">{e.name}</p>
-                <img className="h-8 w-8" src={e.icon} alt="icon"></img>
+                <img className="h-4 w-4" src={e.icon} alt="icon"></img>
               </div>)}
           </div>
           <div className='h-px w-full bg-slate-200'></div>
