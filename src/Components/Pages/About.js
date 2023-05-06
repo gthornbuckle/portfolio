@@ -30,7 +30,7 @@ function About() {
               I like working on personal coding projects in my spare time, some of which are featured on this page, as well as researching and implementing different libraries or components for front end development to further build on my skills.
             </p>
             <p className="py-2 text-xl text-justify">
-              However when I'm not working on coding, I like to  indulge in some of my other hobbies which include:
+              When I'm not coding, I like to  indulge in some of my other hobbies which include:
             </p>
             <ul className='text-xl text-justify'>
               <li className="py-2">
