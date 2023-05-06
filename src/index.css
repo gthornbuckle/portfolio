@@ -3,7 +3,7 @@
 @import "tailwindcss/utilities";
 
 @import url('https://fonts.googleapis.com/css?family=Work+Sans');
-@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500');
+@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,600,700');
 @import url('https://fonts.googleapis.com/css?family=Source+Code+Pro:200,400,500');
 
 body {
@@ -47,9 +47,11 @@ code {
     text-decoration-line: none;
   }
   .footer{
+    height:fit-content;
     display: flex;
-    flex-direction: row;
-    align-items: flex-end;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     height: 6rem;
     background-color: #020617;
   }
@@ -58,7 +60,7 @@ code {
     flex-direction: row;
     align-items: flex-start;
     justify-content: center;
-    background-color: #64748b;
+    background-color: #475569;
     border: none;
     filter: drop-shadow(0 10px 8px rgb(0 0 0 / 0.04)) drop-shadow(0 4px 3px rgb(0 0 0 / 0.1));
   }

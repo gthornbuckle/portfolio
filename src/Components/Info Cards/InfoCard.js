@@ -9,10 +9,13 @@ function InfoCard(props) {
         <div className='flex flex-col items-start grow-0'>
           <h3 className="py-3 px-3 text-yellow-400 text-4xl font-md">{props.title}</h3>
           <div className="py-3 flex flex-row flex-wrap items-center justify-around text-teal-300 text-lg text-center">
-              {props.tech.map(e =><div className='flex flex-row items-center'>
-                <p key={e.name} className="px-2">{e.name}</p>
-                <img className="h-4 w-4" src={e.icon} alt="icon"></img>
-              </div>)}
+              {props.tech.map(e =><div 
+                key={e.name} 
+                className='flex flex-row items-center'>
+                  <p className="px-2">{e.name}</p>
+                  <img className="h-4 w-4" src={e.icon} alt="icon"></img>
+              </div>
+              )}
           </div>
           <div className='h-px w-full bg-slate-200'></div>
           <p className="py-3 px-3 text-slate-200 text-lg text-justify">{props.desc}</p>

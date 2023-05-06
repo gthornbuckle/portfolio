@@ -35,16 +35,16 @@ export const skillIconsInline = {
 }
 
 export const skillIconsColour = {
-    html5: html5colour,
-    css3: css3colour,
-    javascript: jscolour,
-    react: reactcolour,
-    tailwind: tailwindcolour,
-    bootstrap: bootstrapcolour,
-    nodejs: nodejscolour,
-    npm: npmcolour,
-    github: githubcolour,
-    firebase: firebasecolour,
-    postman: postmancolour,
-    illustrator: illustratorcolour
+    HTML5: html5colour,
+    CSS3: css3colour,
+    Javascript: jscolour,
+    React: reactcolour,
+    TailwindCSS: tailwindcolour,
+    Bootstrap: bootstrapcolour,
+    nodeJS: nodejscolour,
+    NPM: npmcolour,
+    Github: githubcolour,
+    Firebase: firebasecolour,
+    Postman: postmancolour,
+    Illustrator: illustratorcolour
 }
