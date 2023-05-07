@@ -90,7 +90,7 @@ export const workData = [
             },
             {
                 name: "Bootstrap",
-                icon: skillIconsInline.css3
+                icon: skillIconsInline.bootstrap
             }
         ],
         description: "Created using React & styled using Bootstrap, this website was also created as part of my bootcamp group work. Designed to plan city breaks, a user can input a city and then recieve information on hotels, restaurants and attractions within that city. These can be saved into seperate 'Journeys' to view later. (The APIs used for this project have since been deprecated meaning some aspects of the site may function incorrectly).",
