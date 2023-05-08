@@ -1,59 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import InfoCard from '../Info Cards/InfoCard';
-import { workData } from '../work_data'
-import { skillIconsColour } from '../icon_data';
-
-const mySkills = [
-  {
-    name: "HTML5",
-    icon: skillIconsColour.HTML5
-  },
-  {
-    name: "CSS3",
-    icon: skillIconsColour.CSS3
-  },
-  {
-    name: "Javascript",
-    icon: skillIconsColour.Javascript
-  },
-  {
-    name: "React",
-    icon: skillIconsColour.React
-  },
-  {
-    name: "TailwindCSS",
-    icon: skillIconsColour.TailwindCSS
-  },
-  {
-    name: "Bootstrap",
-    icon: skillIconsColour.Bootstrap
-  },
-  {
-    name:  "Firebase",
-    icon: skillIconsColour.Firebase
-  },
-  {
-    name:  "Github",
-    icon: skillIconsColour.Github
-  },
-  {
-    name:  "nodeJS",
-    icon: skillIconsColour.nodeJS
-  },
-  {
-    name:  "NPM",
-    icon: skillIconsColour.NPM
-  },
-  {
-    name:  "Postman",
-    icon: skillIconsColour.Postman
-  },
-  {
-    name:  "Illustrator",
-    icon: skillIconsColour.Illustrator
-  }
-]
+import { workData, mySkills } from '../work_data';
 
 const cvLinkContainer = {
   hover: {

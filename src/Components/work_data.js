@@ -1,4 +1,5 @@
 import { skillIconsInline } from './icon_data';
+import { skillIconsColour } from './icon_data';
 
 export const workData = [
     {
@@ -120,3 +121,54 @@ export const workData = [
         image:"https://firebasestorage.googleapis.com/v0/b/portfolio-da254.appspot.com/o/weather_dashboard.png?alt=media&token=3f993964-189d-4bef-95c3-069c277a92ba",
     }
 ]
+
+export const mySkills = [
+    {
+      name: "HTML5",
+      icon: skillIconsColour.HTML5
+    },
+    {
+      name: "CSS3",
+      icon: skillIconsColour.CSS3
+    },
+    {
+      name: "Javascript",
+      icon: skillIconsColour.Javascript
+    },
+    {
+      name: "React",
+      icon: skillIconsColour.React
+    },
+    {
+      name: "TailwindCSS",
+      icon: skillIconsColour.TailwindCSS
+    },
+    {
+      name: "Bootstrap",
+      icon: skillIconsColour.Bootstrap
+    },
+    {
+      name:  "Firebase",
+      icon: skillIconsColour.Firebase
+    },
+    {
+      name:  "Github",
+      icon: skillIconsColour.Github
+    },
+    {
+      name:  "nodeJS",
+      icon: skillIconsColour.nodeJS
+    },
+    {
+      name:  "NPM",
+      icon: skillIconsColour.NPM
+    },
+    {
+      name:  "Postman",
+      icon: skillIconsColour.Postman
+    },
+    {
+      name:  "Illustrator",
+      icon: skillIconsColour.Illustrator
+    }
+  ]

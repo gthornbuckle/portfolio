@@ -3,7 +3,6 @@ import { motion } from 'framer-motion';
 
 function Contact() {
   return (
-    <>
     <section className='py-24 flex flex-row items-center justify-center selection:bg-slate-500 selection:text-slate-200'>
       <div className='mx-10 container flex flex-col items-center md:items-start'>
         <h1 className="py-8 text-slate-700 text-6xl font-bold font-['Work_Sans']"><span className="text-teal-600">contact</span>Me_</h1>
@@ -29,7 +28,6 @@ function Contact() {
         </form>
       </div>
     </section>
-    </>
   );
 }
 

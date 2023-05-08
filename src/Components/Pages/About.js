@@ -1,13 +1,18 @@
 import React from 'react';
+import about_1 from '../images/about_1.png';
+import about_2 from '../images/about_2.png';
 
 function About() {
   return (
-    <>
     <section className='pt-24 flex flex-row items-center justify-center selection:bg-slate-500 selection:text-slate-200'>
       <div className='mx-10 container flex flex-col '>
         <h1 className="py-8 text-slate-700 text-6xl font-bold font-['Work_Sans']"><span className="text-teal-600">about</span>Me_</h1>
-        <div className='py-4 flex flex-col items-center'>
-          <img className="" src="https://placehold.co/600x400"></img>
+        <div className='py-4 flex flex-col items-center lg:flex-row-reverse'>
+          <img className="relative h-full w-full lg:h-96 lg:pl-10" src={about_1} alt="about_image_1"/>
+          <div className='relative bottom-[20rem] right-[10rem]'>
+            <div className='absolute sm:hidden md:block left-4 lg:left-72 top-6 lg:top-56 -z-20 h-[20rem] w-[20rem] bg-yellow-400 overflow-hidden'></div>
+            <div className='absolute sm:hidden md:block -left-4 lg:left-52 lg:top-16 -z-10 h-[20rem] w-[20rem] bg-teal-400 overflow-hidden'></div>
+          </div>
           <div className='flex flex-col items-start py-8 text-slate-800'>
             <h2 className="font-bold text-3xl pb-4">My career path</h2>
             <p className="pb-2 text-xl text-justify">
@@ -21,8 +26,12 @@ function About() {
             </p>
           </div>
         </div>
-        <div className='py-4 flex flex-col items-center'>
-          <img className="" src="https://placehold.co/600x400"></img>
+        <div className='py-4 flex flex-col items-center lg:flex-row'>
+          <img className="relative h-full w-full lg:h-[36rem] lg:pr-10" src={about_2} alt="about_image_2"/>
+          <div className='relative bottom-[32rem] right-[10rem]'>
+            <div className='absolute sm:hidden md:block left-4 lg:-left-[22rem] top-10 lg:top-44 -z-20 h-[24rem] lg:h-[32rem] w-[10rem] bg-yellow-400'></div>
+            <div className='absolute sm:hidden md:block left-4 top-40 lg:-left-52 lg:top-80 -z-10 h-[24rem] lg:h-[32rem] w-[20rem] bg-teal-400'></div>
+          </div>
           <div className='flex flex-col py-8 text-slate-800'>
             <h2 className="font-bold text-3xl pb-4">My interests</h2>
             <p className="pb-2 text-xl text-justify">
@@ -35,7 +44,7 @@ function About() {
             <ul className='text-xl text-justify'>
               <li className="py-2">
                 <span className='underline font-semibold decoration-2'>Running</span><br/>
-                I run regularly to keep fit and intend to complete my first marathon in 2024.
+                I run regularly to keep myself fit and intend to complete my first marathon in 2024.
               </li>
               <li className="py-2">
                 <span className='underline font-semibold decoration-2'>Hiking</span><br/>
@@ -47,14 +56,13 @@ function About() {
               </li>
               <li className="py-2">
                 <span className='underline font-semibold decoration-2'>Drawing</span><br/>
-                One of my favourite ways to relax is to work on one of my illustrations. I'm also currently in the process of building a website to host my work.
+                One of my favourite pastimes is working on my digital illustrations. I'm currently in the process of building a website to display my work.
               </li>
             </ul>
           </div>
         </div>
       </div>
-    </section>  
-    </>
+    </section>
   );
 }
 
