@@ -12,7 +12,6 @@ function About() {
           <motion.img className="relative z-30 h-full w-full md:h-[32rem] md:w-[32rem] lg:h-96 lg:pl-10" 
             src={about_1} 
             alt="about_image_1"
-            loading="lazy"
             initial={{clipPath: "inset(0 0 0 100%)"}}
             animate={{clipPath: "inset(0 0 0 0)"}}
             transition={{duration: 0.6}}
@@ -50,7 +49,6 @@ function About() {
           <motion.img className="relative h-full w-full md:h-[32rem] md:w-[26rem] lg:h-[36rem] lg:w-full lg:pr-10" 
             src={about_2} 
             alt="about_image_2"
-            loading="lazy"
             initial={{clipPath: "inset(0 100% 0 0)"}}
             animate={{clipPath: "inset(0 0 0 0)"}}
             transition={{duration: 0.6}}
