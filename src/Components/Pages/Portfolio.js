@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import InfoCard from '../Info Cards/InfoCard';
 import { workData, mySkills } from '../work_data';
+import cvfile from '../cv_download.pdf';
 
 const cvLinkContainer = {
   hover: {
@@ -84,7 +85,7 @@ function Portfolio() {
             variants={cvLinkContainer}
           >
             <motion.a className="py-4 flex flex-row text-4xl font-bold drop-shadow-md font-['Work_Sans'] decoration-slate-300"
-              href="../cv_download.pdf"
+              href={cvfile}
               download
             >
               <motion.div className="text-teal-300" variants={cvChild}>view</motion.div>
