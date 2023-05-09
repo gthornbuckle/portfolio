@@ -60,7 +60,7 @@ export const workData = [
             }
         ],
         description: "Created using React & styled using basic CSS. A simple web app which allows users to play a game of Blackjack. I created to test my knowledge of React as well as a learning experience for the animation library framer-motion.",
-        url: "no_url_yet",
+        url: "https://gh-blackjack.vercel.app/",
         github: "https://github.com/gthornbuckle/Blackjack",
         image: blackjack_img,
     },
