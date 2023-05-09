@@ -1,4 +1,5 @@
 import React from 'react';
+import { motion } from 'framer-motion';
 import about_1 from '../images/about_1.png';
 import about_2 from '../images/about_2.png';
 
@@ -8,11 +9,29 @@ function About() {
       <div className='mx-10 container flex flex-col '>
         <h1 className="py-8 text-slate-700 text-6xl font-bold font-['Work_Sans']"><span className="text-teal-600">about</span>Me_</h1>
         <div className='py-4 flex flex-col items-center lg:flex-row-reverse'>
-          <img className="relative h-full w-full lg:h-96 lg:pl-10" src={about_1} alt="about_image_1"/>
-          <div className='relative bottom-[20rem] right-[10rem]'>
-            <div className='absolute sm:hidden md:block left-4 lg:left-72 top-6 lg:top-56 -z-20 h-[20rem] w-[20rem] bg-yellow-400 overflow-hidden'></div>
-            <div className='absolute sm:hidden md:block -left-4 lg:left-52 lg:top-16 -z-10 h-[20rem] w-[20rem] bg-teal-400 overflow-hidden'></div>
-          </div>
+          <motion.img className="relative z-30 h-full w-full md:h-[32rem] md:w-[32rem] lg:h-96 lg:pl-10" 
+            src={about_1} 
+            alt="about_image_1"
+            initial={{clipPath: "inset(0 0 0 100%)"}}
+            animate={{clipPath: "inset(0 0 0 0)"}}
+            transition={{duration: 0.6}}
+          />
+          <motion.div className='relative bottom-[20rem] right-[10rem]'
+            initial={{opacity: 0}}
+            animate={{opacity: 1}}
+            transition={{duration: 0.5}}
+          >
+            <motion.div className='absolute sm:hidden md:block left-4 lg:left-72 top-6 lg:top-56 -z-20 h-[20rem] w-[20rem] bg-yellow-400 overflow-hidden'
+              initial={{y: -20}}
+              animate={{y: 0}}
+              transition={{type: "spring", damping: 6, stiffness: 50, delay: 0.1}}
+            ></motion.div>
+            <motion.div className='absolute sm:hidden md:block -left-4 lg:left-52 lg:top-16 -z-10 h-[20rem] w-[20rem] bg-teal-400 overflow-hidden'
+              initial={{y: 20}}
+              animate={{y: 0}}
+              transition={{type: "spring", damping: 6, stiffness: 50, delay: 0.1}}
+            ></motion.div>
+          </motion.div>
           <div className='flex flex-col items-start py-8 text-slate-800'>
             <h2 className="font-bold text-3xl pb-4">My career path</h2>
             <p className="pb-2 text-xl text-justify">
@@ -27,11 +46,25 @@ function About() {
           </div>
         </div>
         <div className='py-4 flex flex-col items-center lg:flex-row'>
-          <img className="relative h-full w-full lg:h-[36rem] lg:pr-10" src={about_2} alt="about_image_2"/>
-          <div className='relative bottom-[32rem] right-[10rem]'>
-            <div className='absolute sm:hidden md:block left-4 lg:-left-[22rem] top-10 lg:top-44 -z-20 h-[24rem] lg:h-[32rem] w-[10rem] bg-yellow-400'></div>
-            <div className='absolute sm:hidden md:block left-4 top-40 lg:-left-52 lg:top-80 -z-10 h-[24rem] lg:h-[32rem] w-[20rem] bg-teal-400'></div>
-          </div>
+          <motion.img className="relative h-full w-full md:h-[32rem] md:w-[26rem] lg:h-[36rem] lg:w-full lg:pr-10" 
+            src={about_2} 
+            alt="about_image_2"
+            initial={{clipPath: "inset(0 100% 0 0)"}}
+            animate={{clipPath: "inset(0 0 0 0)"}}
+            transition={{duration: 0.6}}
+          />
+          <motion.div className='relative bottom-[32rem] right-[10rem]'>
+            <motion.div className='absolute sm:hidden md:block left-4 lg:-left-[22rem] top-10 lg:top-44 -z-20 h-[24rem] lg:h-[32rem] w-[10rem] bg-yellow-400'
+              initial={{y: 20}}
+              animate={{y: 0}}
+              transition={{type: "spring", damping: 6, stiffness: 50, delay: 0.1}}
+            ></motion.div>
+            <motion.div className='absolute sm:hidden md:block left-4 top-40 lg:-left-52 lg:top-80 -z-10 h-[24rem] lg:h-[32rem] w-[20rem] bg-teal-400'
+              initial={{y: -20}}
+              animate={{y: 0}}
+              transition={{type: "spring", damping: 6, stiffness: 50, delay: 0.1}}
+            ></motion.div>
+          </motion.div>
           <div className='flex flex-col py-8 text-slate-800'>
             <h2 className="font-bold text-3xl pb-4">My interests</h2>
             <p className="pb-2 text-xl text-justify">
@@ -56,7 +89,7 @@ function About() {
               </li>
               <li className="py-2">
                 <span className='underline font-semibold decoration-2'>Drawing</span><br/>
-                One of my favourite pastimes is working on my digital illustrations. I'm currently in the process of building a website to display my work.
+                When I get chance, I like to spend time working on digital illustrations. I'm currently in the process of building a website to display my work.
               </li>
             </ul>
           </div>

@@ -4,7 +4,7 @@ import { motion } from 'framer-motion';
 function InfoCard(props) {
 
   return (
-    <div className="info_card my-10 selection:bg-teal-200 selection:text-teal-800 lg:flex-row items-start">
+    <div className="info_card my-10 selection:bg-teal-200 selection:text-teal-800 lg:flex-row lg:items-start">
         <div className="h-96 w-96 shrink-0 bg-no-repeat bg-cover" style={{backgroundImage: `url(${props.image})`}}></div>
         <div className='flex flex-col items-start grow-0'>
           <h3 className="py-3 px-3 text-yellow-400 text-4xl font-md">{props.title}</h3>
