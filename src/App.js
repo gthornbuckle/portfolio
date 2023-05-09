@@ -5,11 +5,13 @@ import Portfolio from './Components/Pages/Portfolio';
 import About from './Components/Pages/About';
 import Contact from './Components/Pages/Contact';
 import Footer from './Components/Footer';
+import ResetScroll from './Components/ResetScroll';
 
 function App() {
   return (
     <BrowserRouter>
       <>
+        <ResetScroll />
         <Navbar />
         <Routes>
           <Route path="portfolio" element={<Portfolio />} />

@@ -27,25 +27,22 @@ function Contact() {
         >
           <div className='flex flex-col'>
             <label>Name</label>
-            <input className=' pl-1 bg-slate-300 text-slate-800 text-lg font-medium h-8 placeholder:pl-1 placeholder:text-slate-400'
+            <input className=' pl-1 bg-slate-300 text-slate-800 text-lg font-medium h-8'
               type="text" 
               name="from_name"
-              placeholder="Enter name..."
             />
           </div>
           <div className='flex flex-col'>
             <label>Email</label>
-            <input className=' pl-1 bg-slate-300 text-slate-800 text-lg font-medium h-8 invalid:border-rose-400 placeholder:pl-1 placeholder:text-slate-400'
+            <input className=' pl-1 bg-slate-300 text-slate-800 text-lg font-medium h-8 invalid:border-rose-400'
               type="email"
               name="from_email"
-              placeholder="Enter email..."
             />
           </div>
           <div className='flex flex-col'>
             <label>Message</label>
-            <textarea className='pl-1 bg-slate-300 text-slate-800 text-lg font-medium h-24 resize-none placeholder:pl-1 placeholder:text-slate-400'
+            <textarea className='pl-1 bg-slate-300 text-slate-800 text-lg font-medium h-32 lg:h-64 resize-none'
               name="message"
-              placeholder="Enter your message..."
             />
           </div>
           <motion.button className='mt-6 p-2 bg-teal-300 text-slate-800 font-bold md:self-end px-10'
