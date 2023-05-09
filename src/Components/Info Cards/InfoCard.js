@@ -20,7 +20,7 @@ function InfoCard(props) {
     <motion.div
       initial="offscreen"
       whileInView="onscreen"
-      viewport={{ once: true, amount: 0.8 }}
+      viewport={{ once: true, amount: 0.4 }}
     >
       <motion.div className="info_card my-10 selection:bg-teal-200 selection:text-teal-800 lg:flex-row lg:items-start"
         variants={cardVariants}

@@ -114,7 +114,7 @@ function Portfolio() {
         <motion.div className="py-6 font-['Work_Sans'] text-center font-bold text-slate-700 grid grid-cols-2 md:grid-cols-4"
           initial="offscreen"
           whileInView="onscreen"
-          viewport={{ once: true, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.1 }}
           variants={skillsContainer}
         >
           {mySkills.map((skill, i) =><motion.div
