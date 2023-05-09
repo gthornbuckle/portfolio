@@ -91,7 +91,7 @@ function About() {
               </li>
               <li className="py-2">
                 <span className='underline font-semibold decoration-2'>Drawing</span><br/>
-                When I get chance, I like to spend time working on digital illustrations. I'm currently in the process of building a website to display my work.
+                When I get the chance I like to spend time working on my digital illustrations. I'm currently in the process of building a website to display my work.
               </li>
             </ul>
           </div>
