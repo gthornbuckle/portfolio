@@ -83,7 +83,10 @@ function Portfolio() {
             animate={cvHover ? "hover" : "initial"}
             variants={cvLinkContainer}
           >
-            <motion.a className="py-4 flex flex-row text-4xl font-bold drop-shadow-md font-['Work_Sans'] decoration-slate-300">
+            <motion.a className="py-4 flex flex-row text-4xl font-bold drop-shadow-md font-['Work_Sans'] decoration-slate-300"
+              href="../cv_download.pdf"
+              download
+            >
               <motion.div className="text-teal-300" variants={cvChild}>view</motion.div>
               <motion.div className="text-slate-300" variants={cvChild}>My</motion.div>
               <motion.div className="text-yellow-400" variants={cvChild}>CV</motion.div>
